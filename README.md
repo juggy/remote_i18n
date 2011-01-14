@@ -1,6 +1,6 @@
-# RemoteI18n #
+# Remote I18n #
 
-RemoteI18n helps developer export translated messages from a Rails server to a Javascript/HTML client application. More and more we need to use templates in javascript to create new HTML segments, but when you are building an I18n application you need to make sure that those segments contains the right language. This is what this project is for. For now it bundle the Rails translations into different javascript file ready for consumption.
+Remote I18n helps developer export translated messages from a Rails server to a Javascript/HTML client application. More and more we need to use templates in javascript to create new HTML segments, but when you are building an I18n application you need to make sure that those segments contains the right language. This is what this project is for. For now it bundle the Rails translations into different javascript file ready for consumption.
 
 ## Getting started
 *For Rails 3 only*
@@ -15,21 +15,21 @@ RemoteI18n helps developer export translated messages from a Rails server to a J
     end
 
 The configuration can't be simpler
- - _name_ is the name of the resulting file in /public/javascripts
- - _i18n_path_ is the path to use in the Rails i18n module
- - _only_ is to specify languages, by default it is all configured ones
+-  _name_ is the name of the resulting file in /public/javascripts
+-  _i18n_path_ is the path to use in the Rails i18n module
+-  _only_ is to specify languages, by default it is all configured ones
  
 The output of this configuration would be:
 
-   - /public/javascripts/date.en.js
-   - /public/javascripts/date.fr-CA.js
-   - /public/javascripts/errors.en.js
-   - /public/javascripts/errors.fr-CA.js
+    - /public/javascripts/date.en.js
+    - /public/javascripts/date.fr-CA.js
+    - /public/javascripts/errors.en.js
+    - /public/javascripts/errors.fr-CA.js
    
 In Javascript the _T_ object is created to access the translations:
 
-   blank_error = T.errors.message.blank;
-   january = T.date.month_names[1];
+    blank_error = T.errors.message.blank;
+    january = T.date.month_names[1];
 
 ## More Details
 
