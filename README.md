@@ -15,21 +15,21 @@ RemoteI18n helps developer export translated messages from a Rails server to a J
     end
 
 The configuration can't be simpler
- - _name_ is the name of the resulting file in /public/javascripts
- - _i18n_path_ is the path to use in the Rails i18n module
- - _only_ is to specify languages, by default it is all configured ones
+-  _name_ is the name of the resulting file in /public/javascripts
+-  _i18n_path_ is the path to use in the Rails i18n module
+-  _only_ is to specify languages, by default it is all configured ones
  
 The output of this configuration would be:
 
-   - /public/javascripts/date.en.js
-   - /public/javascripts/date.fr-CA.js
-   - /public/javascripts/errors.en.js
-   - /public/javascripts/errors.fr-CA.js
+    - /public/javascripts/date.en.js
+    - /public/javascripts/date.fr-CA.js
+    - /public/javascripts/errors.en.js
+    - /public/javascripts/errors.fr-CA.js
    
 In Javascript the _T_ object is created to access the translations:
 
-   blank_error = T.errors.message.blank;
-   january = T.date.month_names[1];
+    blank_error = T.errors.message.blank;
+    january = T.date.month_names[1];
 
 ## More Details
 
