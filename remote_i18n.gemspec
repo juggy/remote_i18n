@@ -27,7 +27,8 @@ Gem::Specification.new do |s|
     "lib/remote_i18n/integration.rb",
     "lib/remote_i18n/integration/rails3.rb",
     "lib/remote_i18n/tasks/remote_i18n.rake",
-    "lib/remote_i18n/version.rb"
+    "lib/remote_i18n/version.rb",
+    "remote_i18n.gemspec"
   ]
   s.homepage = %q{http://github.com/juggy/remote_i18n}
   s.licenses = ["MIT"]
