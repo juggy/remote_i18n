@@ -9,10 +9,12 @@ RemoteI18n helps developer export translated messages from a Rails server to a J
 2. Run `bundle install`
 3. Create a "remote_i18n" in /config/initializers with the following
 
+
     RemoteI18n.configure do |config|
       config.translate :name=>:date, :i18n_path=>"date", :only=>["en", "fr-CA"]
       config.translate :name=>:errors, :i18n_path=>"errors", :only=>["en", "fr-CA"]
     end
+
 
 The configuration can't be simpler
 -  _name_ is the name of the resulting file in /public/javascripts
