@@ -7,7 +7,9 @@ Remote I18n helps developer export translated messages from a Rails server to a 
 
 1. Add `gem 'remote_i18n' to your Gemfile
 2. Run `bundle install`
-3. Create a "remote_i18n" in /config/initializers with the following
+3. Create a "remote_i18n" in /config/initializers 
+
+Add the following
 
     RemoteI18n.configure do |config|
       config.translate :name=>:date, :i18n_path=>"date", :only=>["en", "fr-CA"]
