@@ -109,7 +109,7 @@ module RemoteI18n
           output = I18n.translate(i18n_path)
           path = output_root.join("#{name}.#{locale}.js")
           
-          compiled_output = "if(this.T === null || this.T == undefined)this.T = {};this.T.#{name} = #{output.to_json}"
+          compiled_output = "if(this.T === null || this.T == undefined)this.T = {};this.T.#{name} = #{output.to_json};"
           
           FileUtils.mkdir_p File.dirname(path)
           File.open(path, "w+") { |f| f.write compiled_output }
