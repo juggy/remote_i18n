@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{remote_i18n}
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Julien Guimont"]
-  s.date = %q{2011-01-14}
+  s.authors = [%q{Julien Guimont}]
+  s.date = %q{2011-10-26}
   s.description = %q{RemoteI18n helps developer export translated messages from a Rails server to a Javascript/HTML client application. More and more we need to use templates in javascript to create new HTML segments, but when you are building an I18n application you need to make sure that those segments contains the right language. This is what this project is for. For now it bundle the Rails translations into different javascript file ready for consumption.}
   s.email = %q{julien@porkepic.com}
   s.extra_rdoc_files = [
@@ -31,13 +31,12 @@ Gem::Specification.new do |s|
     "remote_i18n.gemspec"
   ]
   s.homepage = %q{http://github.com/juggy/remote_i18n}
-  s.licenses = ["MIT"]
-  s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.7}
+  s.licenses = [%q{MIT}]
+  s.require_paths = [%q{lib}]
+  s.rubygems_version = %q{1.8.6}
   s.summary = %q{I18n for Javascript with Rails}
 
   if s.respond_to? :specification_version then
-    current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
