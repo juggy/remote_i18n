@@ -8,7 +8,7 @@ module RemoteI18n
         end
         
         initializer 'remote_i18n.wrap_filter' do
-          config.app_middleware.use RemoteI18n::Filter if RemoteI18n.add_filter?
+          #config.app_middleware.use RemoteI18n::Filter if RemoteI18n.add_filter?
         end
         
       end
